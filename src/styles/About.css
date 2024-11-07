@@ -1,0 +1,347 @@
+.carousel-caption1 {
+  position: absolute;
+  left: 5%; /* Positioning to the left side */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: left; /* Aligning text to the left */
+  z-index: 10;
+}
+
+.carousel-text1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(197, 224, 180, 255);
+}
+
+.carousel-text1 span {
+  color: green; /* Darker color for the text */
+}
+
+.carousel-caption1 p {
+  font-size: 1.2rem;
+  width: 40%;
+}
+
+.img_carousel img {
+  height: 100vh !important; /* Adjust image height for smaller screens */
+}
+
+@media (max-width: 900px) {
+  .carousel-caption1 .carousel-text1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-caption1 {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    color: #fff;
+    text-align: center; /* Align text to the center */
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5); /* Blur background effect */
+    padding: 10px;
+    border-radius: 10px; /* Smooth corners */
+    backdrop-filter: blur(10px); /* Background blur effect */
+    margin-top: 30px;
+    width: 70%;
+  }
+
+  .carousel-caption1 .carousel-text1 {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .carousel-caption1 p {
+    font-size: 1rem; /* Reduce paragraph font size */
+    width: 100%; /* Full width */
+  }
+}
+
+.section_about {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.section_about h1 {
+  font-size: 3.5rem;
+  text-align: center; /* Center align the heading */
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section_about h1 span {
+  color: green; /* Highlight the word "Us" in green */
+}
+
+.entire_about {
+  display: flex;
+  justify-content: space-around; /* Space out the text and image */
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding: 0 50px;
+}
+
+.main_goal {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main_goal h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main_goal p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about_img img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners for the image */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Media Queries for screens up to 768px */
+@media (max-width: 768px) {
+  .section_about h1 {
+    font-size: 2.5rem; /* Reduce heading size */
+  }
+
+  .main_goal {
+    width: 100%; /* Full width for the text */
+    margin-bottom: 20px; /* Add space between text and image */
+  }
+
+  .about_img img {
+    max-width: 100%; /* Full width image */
+  }
+
+  .entire_about {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+    flex-direction: column; /* Stack text and image vertically */
+  }
+
+  .main_goal h2 {
+    font-size: 1.8rem; /* Reduce sub-heading size */
+  }
+
+  .main_goal p {
+    font-size: 1rem; /* Slightly smaller paragraph text */
+  }
+}
+
+/* Media Queries for screens between 800px and 1200px */
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .entire_about {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+  .about_text {
+    width: 50%; /* Set the width of the text to 50% */
+    font-size: 15px; /* Reduce the font size */
+  }
+  .about_img {
+    width: 50%; /* Set the width of the image to 50% */
+  }
+  .main_goal p {
+    font-size: 0.9rem; /* Reduce font size for paragraphs */
+    line-height: 1.5; /* Adjust line height */
+  }
+  .main_goal h2 {
+    font-size: 1.6rem; /* Increase sub-heading size */
+  }
+}
+
+/* Media Queries for screens up to 500px */
+@media (max-width: 500px) {
+  .section_about h1 {
+    font-size: 2rem; /* Further reduce heading size */
+  }
+
+  .main_goal {
+    width: 90%; /* Full width for the text */
+  }
+
+  .main_goal h2 {
+    font-size: 1.5rem; /* Reduce sub-heading size */
+  }
+
+  .main_goal p {
+    font-size: 0.9rem; /* Smaller font size for paragraphs */
+    line-height: 1.5; /* Adjust line height */
+  }
+
+  .about_img img {
+    max-width: 100%; /* Full width image */
+    margin-top: 20px; /* Add spacing between image and text */
+  }
+
+  .entire_about {
+    padding: 0 10px; /* Less padding for very small screens */
+  }
+}
+
+
+/* General Styles */
+.brand-section {
+  padding-top: 40px;
+  height: 50vh;
+  width: 35%;
+}
+
+.brand-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.brand-logos .brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.brand-logos .brand-logo img {
+  max-width: 100% !important;
+  height: 70vh !important;
+  
+}
+
+.slick-slide {
+  margin: 0 5px;
+}
+
+.slick-list {
+  margin: 0 -5px;
+}
+
+/* Flowchart Styles */
+.flowchart_new_image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+}
+
+/* Flowchart Image Styling */
+.flowchart_new_image img {
+  object-fit: contain;
+  width: 80%;
+  height: auto;
+  z-index: 0;
+  max-width: 100%;
+}
+
+.flow-brand-divide{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Download Button Styling */
+.download-brochure-button {
+  position: absolute;
+  top: 60px;
+  left: 14%; /* Center horizontally */
+  
+  z-index: 1;
+  padding: 10px 20px;
+  background-color: green;
+  color: white !important;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.download-brochure-button:hover {
+  background-color: rgba(218,160,35,255);
+  color: black!important;
+
+  transform: scale(1.2);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .flowchart_new_image img {
+    width: 80%;
+  }
+  .brand-logos .brand-logo img {
+    max-width: 100% !important;
+    height: 45vh !important;
+    
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .flowchart_new_image img {
+    width: 70%;
+  }
+
+  .brand-logos .brand-logo img {
+    max-width: 100% !important;
+    height: 45vh !important;
+    
+  }
+}
+@media only screen and (max-width: 600px) {
+  .flowchart_new_image img {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+
+  .download-brochure-button{
+    width: auto;
+    height: fit-content;
+    left: 2px;
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  .flow-brand-divide {
+    flex-direction: column; /* Stacks the sections in a column */
+    width: 100%; /* Ensures it takes full width */
+  }
+
+  .brand-section {
+    width: 100%; /* Ensures brand section takes full width */
+  }
+
+  .flowchart_new_image {
+    width: 100%; /* Ensures flowchart section takes full width */
+  }
+}
+
+
+/* @media only screen and (max-width: 400px) {
+  .flowchart_new_image img {
+    width: 95%;
+  }
+
+  .download-brochure-button {
+    display: none;
+  }
+  .flow-brand-divide{
+    display: flex;
+    flex-direction: column;
+  }
+  .brand-section{
+    width: 100%;;
+  }
+} */
